@@ -47,7 +47,7 @@ const Detail = ({exerciseDetail}) => {
         </Typography>
 
         {/* Icons below detail description */}
-        {extraDetail.map((item) => (
+        {extraDetail?.map((item) => (
           <Stack key={item.name} direction="row" gap="24px" alignItems="center">
             <Button
               sx={{background: '#fff2db', borderRadius: '50%', width: '100px', height: '100px'}}
