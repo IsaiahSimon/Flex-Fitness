@@ -9,5 +9,7 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Fix: "Uncaught ReferenceError: global is not defined" -->
+    <script>const global = globalThis;</script>
   </body>
 </html>

@@ -6,23 +6,23 @@ import TargetImage from '../assets/icons/target.png';
 import EquipmentImage from '../assets/icons/equipment.png';
 
 const Detail = ({exerciseDetail}) => {
-  // destructure values from exerciseDetail passed in from ExerciseDetail component
+  // Destructure values from exerciseDetail passed in from ExerciseDetail component
   const {bodyPart, gifUrl, name, target, equipment} = exerciseDetail;
 
   const extraDetail = [
     {
       icon: BodyPartImage,
-      name: bodyPart
+      name: bodyPart,
     },
     {
       icon:TargetImage,
-      name: target
+      name: target,
     },
     {
       icon: EquipmentImage,
-      name: equipment
+      name: equipment,
     },
-  ]
+  ];
 
   return (
     <Stack
